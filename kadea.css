@@ -1,0 +1,158 @@
+*
+{
+    margin-top:0;
+    padding:0;
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    font-family: ;
+    line-height: 1.6;
+}
+
+header{
+    color: #fff;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 50px;
+}
+
+.link__red{
+    color: red;
+}
+
+.link__black{
+    color: black;
+}
+
+.paragraphe{
+    align-items:center;
+    margin: 0;
+    line-height:1,4em;
+}
+header img, footer img {
+    max-width: 100px;
+    height: auto;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 0;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 1em;
+}
+
+section {
+    margin-bottom: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+}
+
+section h1, section h2, section h3 {
+    color: #333;
+}
+
+section p {
+    color: #555;
+}
+
+button {
+    background:#D92950;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form div {
+    margin-bottom: 1em;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Footer Social Icons */
+footer div a img {
+    width: 30px;
+    height: auto;
+    margin: 0 0.5em;
+}
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    form div {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header, footer {
+        text-align: left;
+        padding: 1em;
+    }
+
+    header img, footer img {
+        max-width: 80px;
+    }
+}
